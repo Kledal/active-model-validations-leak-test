@@ -3,11 +3,11 @@ class MyTest
     contract do
       property :test, virtual: true
 
-      validates :test, presence: true
+      #validates :test, presence: true
 
-      #validation :default do
-      #  required(:test).filled
-      #end
+      validation :default do
+        required(:test).filled
+      end
     end
 
     def process(params)
